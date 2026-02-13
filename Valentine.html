@@ -312,7 +312,7 @@ function checkAnswer(option) {
         }
     }
     else if(currentQuestion === 3){
-        if(option === 'A'){
+        if(option === 'B'){
             isCorrect = true;
         } else if(option === 'D'){
             errorMessage = "Trying to escape? 😜 Not allowed!";
@@ -403,14 +403,14 @@ function nextQuestion(){
         `;
     }
     else if(currentQuestion === 3){
-        questionEl.innerText = "3️⃣ Who do you secretly care about the most?";
-        optionsEl.innerHTML = `
-        <button onclick="checkAnswer('A')">A) Nikhila 💙</button>
-        <button onclick="checkAnswer('B')">B) Myself</button>
-        <button onclick="checkAnswer('C')">C) Best friend</button>
-        <button onclick="checkAnswer('D')">D) Escape</button>
-        `;
-    }
+    questionEl.innerText = "3️⃣ Who listens to all your nonsense daily?";
+    optionsEl.innerHTML = `
+    <button onclick="checkAnswer('A')">A) Best friend</button>
+    <button onclick="checkAnswer('B')">B) Nikhila 💙</button>
+    <button onclick="checkAnswer('C')">C) Everyone</button>
+    <button onclick="checkAnswer('D')">D) Nobody</button>
+    `;
+}
     else if(currentQuestion === 4){
         questionEl.innerText = "4️⃣ Final question… Will you be my valentine? 💝";
         optionsEl.innerHTML = `
